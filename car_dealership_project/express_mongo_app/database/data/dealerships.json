@@ -1,0 +1,6 @@
+[
+  { "id": 1, "name": "Best Cars NYC", "address": "123 Broadway, New York, NY", "state": "NY" },
+  { "id": 2, "name": "Luxury Motors CA", "address": "456 Sunset Blvd, Los Angeles, CA", "state": "CA" },
+  { "id": 3, "name": "Kansas Auto", "address": "789 Main St, Wichita, KS", "state": "KS" },
+  { "id": 4, "name": "Texas Trucks", "address": "101 Rodeo Dr, Dallas, TX", "state": "TX" }
+]

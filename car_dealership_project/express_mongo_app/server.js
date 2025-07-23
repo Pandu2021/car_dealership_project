@@ -77,6 +77,12 @@ app.get('/fetchReview/dealer/:id', async (req, res) => {
     }
 });
 
+app.get('/fetchDealers/:state', async (req, res) => {
+  const state = req.params.state;
+  const dealers = await db.collection('dealerships').find({ state }).toArray();
+  res.json(dealers);
+});
+
 // To insert a review [cite: 105]
 app.post('/insertReview', async (req, res) => {
     try {
@@ -117,6 +123,11 @@ async function populateDummyData() {
         ]);
     }
 }
+
+// 🔻 Tambahkan ini sebelum listen!
+app.get('/', (req, res) => {
+  res.send('🚗 Car Dealership backend is running!');
+});
 
 app.listen(port, async () => {
     await connectToMongo();

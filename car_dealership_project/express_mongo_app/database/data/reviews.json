@@ -1,0 +1,34 @@
+[
+  {
+    "dealership": 1,
+    "user_id": 101,
+    "name": "John Doe",
+    "review": "Great service!",
+    "purchase": true,
+    "purchase_date": "01/01/2023",
+    "car_make": "Toyota",
+    "car_model": "Camry",
+    "car_year ": 2020,
+    "time": "2025-07-23T14:00:00Z"
+  },
+  {
+    "dealership": 2,
+    "user_id": 102,
+    "name": "Jane Smith",
+    "review": "Friendly staff",
+    "purchase": false,
+    "time": "2025-07-22T08:30:00Z"
+  },
+  {
+    "dealership": 3,
+    "user_id": 101,
+    "name": "Alice Brown",
+    "review": "Found my dream car here!",
+    "purchase": true,
+    "purchase_date": "03/15/2024",
+    "car_make": "Ford",
+    "car_model": "F-150",
+    "car_year ": 2024,
+    "time": "2025-07-23T14:00:00Z"
+  }
+]
