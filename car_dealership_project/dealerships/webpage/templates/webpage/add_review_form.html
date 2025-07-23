@@ -1,0 +1,19 @@
+{% extends 'webpage/base.html' %}
+{% block title %} Add Review{% endblock %}
+{% block content %}
+<h2>Write a Review for {{ dealer.name }}
+</h2>
+<form method="post">
+  {% csrf_token %}
+  <label for="name">Your Name:</label><br>
+  <input type="text" name="name"><br>
+
+  <label for="review">Review:</label><br>
+  <textarea name="review"></textarea><br>
+
+  <label for="purchase">Purchased?</label>
+  <input type="checkbox" name="purchase"><br>
+
+  <button type="submit">🚀 Submit Review</button>
+</form>
+{% endblock %}

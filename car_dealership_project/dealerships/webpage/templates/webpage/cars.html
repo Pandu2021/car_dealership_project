@@ -1,0 +1,12 @@
+{% extends 'webpage/base.html' %}
+{% block content %}
+<h2>Car Brand Available</h2>
+<ul>
+  {% for make in carmakes %}
+    <li><strong>{{ make.name }}</strong>: {{ make.description }}</li>
+  {% empty %}
+    <li>No car brands are available yet..</li>
+  {% endfor %}
+</ul>
+{% endblock %}
+

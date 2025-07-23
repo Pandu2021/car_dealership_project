@@ -1,0 +1,12 @@
+{% extends 'webpage/base.html' %}
+{% block title %}All Dealers{% endblock %}
+{% block content %}
+<h2>Dealer List</h2>
+<ul>
+  {% for dealer in dealers %}
+    <li>
+      <a href="{% url 'webpage:dealer_detail' dealer.id %}">{{ dealer.name }}</a>
+    </li>
+  {% endfor %}
+</ul>
+{% endblock %}

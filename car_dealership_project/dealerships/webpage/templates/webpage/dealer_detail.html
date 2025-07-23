@@ -1,0 +1,21 @@
+{% extends 'webpage/base.html' %}
+{% block title %}Dealer Detail{% endblock %}
+{% block content %}
+<h2>{{ dealer.name }}</h2>
+<p><strong>Address:</strong> {{ dealer.address }}</p>
+<p><strong>State:</strong> {{ dealer.state }}</p>
+
+<h3>Reviews:</h3>
+<ul>
+  {% for review in reviews %}
+    <li>
+      <strong>{{ review.name }}</strong>: {{ review.review }}
+      {% if review.purchase %} ✅ {% else %} ❌ {% endif %}
+    </li>
+  {% empty %}
+    <li>No reviews yet.</li>
+  {% endfor %}
+</ul>
+
+<a href="{% url 'webpage:add_review_form' dealer.id %}">📝 Add Review</a>
+{% endblock %}
