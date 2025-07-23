@@ -1,0 +1,26 @@
+# Core Django
+django>=5.0
+gunicorn>=21.2.0
+
+# NLP & Sentiment Analysis
+textblob>=0.17.1
+
+# Database Support
+psycopg2-binary>=2.9.7
+dj-database-url>=1.0.0
+
+# Utility & Compatibility
+sqlparse>=0.4.4
+pytz>=2023.3
+
+# Static Files & Deployment
+whitenoise>=6.6.0
+
+# API Interaction
+requests>=2.31.0
+
+# Optional: Form & UI Enhancements
+django-crispy-forms>=2.0
+
+# Testing
+coverage>=7.4.4
